@@ -147,7 +147,7 @@ window.first-waybar#waybar {
 #workspaces #button:hover,
 #custom-home:hover,
 #custom-calendar:hover {
-  background-color: @hovered ;
+  background-color: #171717;
 }
 
 .first-waybar .modules-right {
@@ -164,7 +164,7 @@ window.first-waybar#waybar {
 
 tooltip {
   background-color: #1a1b26;
-  color: @white;
+  color: #FFEFEF;
   min-height: 100px;
   border-radius: 5px;
 }
