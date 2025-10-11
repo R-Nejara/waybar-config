@@ -187,16 +187,7 @@ tooltip label {
   padding-bottom: 4px;
 }
 
-
-/*======================
-* Bottom waybar styling
-======================= */
-
 /* hide big topbar */
 window.second-waybar#waybar {
   background-color: #1a1b26;
-}
-
-.second-waybar .modules-center {
-  padding: 0.4rem 0;
 }
