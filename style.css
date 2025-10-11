@@ -1,0 +1,202 @@
+* {
+  /* RESET */
+  border: none;
+  border-radius: 0;
+  min-height: 0;
+  margin: 0;
+  padding: 0;
+
+  /* font */
+  font-family: 'JetBrainsMonoNL Nerd Font Mono';
+  font-weight: bold;
+  font-size: 14px;
+}
+
+/*===============
+* default tweaks
+================ */
+
+/* hide big topbar */
+window.first-waybar#waybar {
+  background: transparent;
+}
+
+/* main-asthetic */
+.first-waybar .modules-center,
+#workspaces button {
+  background-color: #1a1b26;
+  color: #FFEFEF;
+  border-radius: 15px;
+}
+
+/*============
+* center module
+============= */
+
+.first-waybar .modules-center {
+  padding: 0px 40px;
+}
+
+.first-waybar #custom-calendar,
+.first-waybar #custom-home,
+.first-waybar #clock {
+  border-radius: 20px;
+}
+
+/*============
+* left module
+============= */
+
+/*============
+* logo
+============= */
+
+#custom-logo {
+  font-size: 5px;
+  background-image: url('/home/rayz/Downloads/logo.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 15px;
+  margin-left: 6px;
+  margin-right: 8px;
+  border-radius: 100%;
+  padding: 10px;
+  background-color: #171717;
+}
+
+/*===========
+* workspaces 
+=========== */
+
+.first-waybar #workspaces button {
+  /* center workspace name */
+  padding-top: 1px;
+
+  /* add left/right spacing */
+  margin: 0 2px;
+
+  /* default button size */
+  min-width: 29px;
+
+  /* sliding animation */
+  transition: min-width 0.1s ease;
+}
+
+.first-waybar #workspaces button.active {
+  background-color: #FFEFEF;
+  color: #7C99AC;
+  min-width: 60px;
+  margin-left: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.first-waybar#workspaces button.focused {
+  background: #64727D;
+  border-radius: 14px;
+}
+
+/*=============
+* center module
+============== */
+
+/*=========
+* calendar
+========== */
+
+/*============
+* clock, home
+============= */
+
+.first-waybar#custom-home,
+.first-waybar#clock {
+  padding-top: 4px;
+}
+
+#custom-terminalicon {
+  font-size: 20px;
+  margin-left: 5px;
+}
+
+#clock {
+  margin: 0 50px;
+  font-size: 14px;
+  padding-bottom: 2.5px;
+}
+
+/*============
+* right module
+============= */
+
+/*==============
+* icon defaults
+=============== */
+
+#pulseaudio,
+#bluetooth,
+#network,
+#cpu {
+  min-width: 50px;
+  margin: 0 5;
+  font-size: 22px;
+  transition: all 0.5s;
+  border-radius: 50px;
+}
+
+#pulseaudio:hover,
+#bluetooth:hover,
+#network:hover,
+#cpu:hover,
+#clock:hover,
+#workspaces #button:hover,
+#custom-home:hover,
+#custom-calendar:hover {
+  background-color: @hovered ;
+}
+
+.first-waybar .modules-right {
+  background-color: #1a1b26;
+  border-radius: 15px;
+  padding: 0 10px;
+}
+
+
+/*========
+* tooltip
+========= */
+
+
+tooltip {
+  background-color: #1a1b26;
+  color: @white;
+  min-height: 100px;
+  border-radius: 5px;
+}
+
+tooltip label {
+  font-size: 13px;
+  min-height: 20px;
+  min-width: 80px;
+}
+
+/*===========================
+* positional fix #DONT TOUCH
+============================ */
+
+#custom-home {
+  padding-bottom: 4px;
+}
+
+
+/*======================
+* Bottom waybar styling
+======================= */
+
+/* hide big topbar */
+window.second-waybar#waybar {
+  background-color: #1a1b26;
+}
+
+.second-waybar .modules-center {
+  padding: 0.4rem 0;
+}
