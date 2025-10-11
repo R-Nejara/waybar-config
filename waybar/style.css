@@ -182,8 +182,3 @@ tooltip label {
 #custom-home {
   padding-bottom: 4px;
 }
-
-/* hide big topbar */
-window.second-waybar#waybar {
-  background-color: #1a1b26;
-}
