@@ -99,10 +99,10 @@
       "tooltip": false
     },
     "custom/calendar": {
-      "exec": "lua ./waybar-scripts/getday.lua",
+      "exec": "lua ../waybar-scripts/getday.lua",
       "interval": 1,
       "format": "󰸗 {text}",
-      "on-click": "./waybar-scripts/opencalendar.sh",
+      "on-click": "../waybar-scripts/opencalendar.sh",
       "tooltip": "true",
       "tooltip-format": "Google Calendar"
     },
