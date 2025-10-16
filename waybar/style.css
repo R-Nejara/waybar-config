@@ -10,6 +10,7 @@
   font-family: 'JetBrainsMonoNL Nerd Font Mono';
   font-weight: bold;
   font-size: 14px;
+  opacity: 0.95;
 }
 
 /*===============
@@ -26,27 +27,18 @@ window.first-waybar#waybar {
 #workspaces button {
   background-color: #1a1b26;
   color: #FFEFEF;
-  border-radius: 15px;
+  border-radius: 20px;
 }
 
 /*============
 * center module
 ============= */
 
-.first-waybar .modules-center {
-  padding: 0px 40px;
-}
-
-.first-waybar .modules-left {
-  /* padding: 0px 40px; */
-  margin: 50px;
-}
-
-
 .first-waybar #custom-calendar,
 .first-waybar #custom-home,
 .first-waybar #clock {
-  border-radius: 20px;
+  border-radius: 10px;
+  padding: 0 10px;
 }
 
 /*============
@@ -58,16 +50,12 @@ window.first-waybar#waybar {
 ============= */
 
 #custom-logo {
-  font-size: 5px;
-  background-image: url('../waybar-images/logo.png');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 15px;
-  margin-left: 6px;
-  margin-right: 8px;
-  border-radius: 100%;
-  padding: 10px;
-  background-color: #171717;
+  font-size: 1rem;
+  margin-right: 10px;
+  border-radius: 18px;
+  /* margin-bottom: 1rem; */
+  padding: 0 15px;
+  background-color: #1a1b26;
 }
 
 /*===========
@@ -75,17 +63,16 @@ window.first-waybar#waybar {
 =========== */
 
 .first-waybar #workspaces button {
-  /* center workspace name */
-  padding-top: 1px;
-
   /* add left/right spacing */
   margin: 0 2px;
+  /* centered */
 
   /* default button size */
-  min-width: 29px;
+  min-width: 30px;
 
   /* sliding animation */
   transition: min-width 0.1s ease;
+  /* margin-bottom: 1rem; */
 }
 
 .first-waybar #workspaces button.active {
@@ -99,21 +86,16 @@ window.first-waybar#waybar {
 
 .first-waybar#workspaces button.focused {
   background: #64727D;
-  border-radius: 14px;
+  border-radius: 10px;
 }
 
-/*=============
-* center module
-============== */
+/*=========
+* calendar
+========== */
 
 /*============
 * clock, home
 ============= */
-
-.first-waybar#custom-home,
-.first-waybar#clock {
-  padding-top: 4px;
-}
 
 #custom-terminalicon {
   font-size: 20px;
@@ -121,9 +103,7 @@ window.first-waybar#waybar {
 }
 
 #clock {
-  margin: 0 50px;
   font-size: 14px;
-  padding-bottom: 2.5px;
 }
 
 /*============
@@ -138,14 +118,14 @@ window.first-waybar#waybar {
 #bluetooth,
 #network,
 #cpu {
-  min-width: 50px;
-  margin: 0 5;
-  font-size: 22px;
+  font-size: 1.5rem;
   transition: all 0.5s;
-  border-radius: 50px;
+  padding: 0 5px;
+  border-radius: 5px;
 }
 
 #pulseaudio:hover,
+#custom-logo:hover,
 #bluetooth:hover,
 #network:hover,
 #cpu:hover,
@@ -157,9 +137,9 @@ window.first-waybar#waybar {
 }
 
 .first-waybar .modules-right {
-  background-color: #1a1b26;
-  border-radius: 15px;
+  border-radius: 20px;
   padding: 0 10px;
+  background-color: #1a1b26;
 }
 
 
@@ -179,12 +159,4 @@ tooltip label {
   font-size: 13px;
   min-height: 20px;
   min-width: 80px;
-}
-
-/*===========================
-* positional fix #DONT TOUCH
-============================ */
-
-#custom-home {
-  padding-bottom: 4px;
 }
