@@ -37,6 +37,12 @@ window.first-waybar#waybar {
   padding: 0px 40px;
 }
 
+.first-waybar .modules-left {
+  /* padding: 0px 40px; */
+  margin: 50px;
+}
+
+
 .first-waybar #custom-calendar,
 .first-waybar #custom-home,
 .first-waybar #clock {

@@ -2,23 +2,28 @@
     "name": "first-waybar",
     "layer": "top",
     "output": "DP-2",
-    "margin-left": 5,
-    "margin-right": 5,
+    "margin-left": 10,
+    "margin-right": 10,
     "margin-top": 5,
+    "height": 0,
     "modules-left": [
       "custom/logo",
       "hyprland/workspaces"
     ],
     "modules-center": [
       "custom/calendar",
+      "custom/spacer",
       "clock",
-      "custom/home",
-      "custom/terminalicon"
+      "custom/spacer",
+      "custom/home"
     ],
     "modules-right": [
       "pulseaudio",
+      "custom/spacer",
       "bluetooth",
+      "custom/spacer",
       "network",
+      "custom/spacer",
       "cpu"
     ],
     "pulseaudio": {
@@ -54,7 +59,7 @@
       "tooltip-format-disconnected": "Disconnected",
       "interval": 3,
       "spacing": 1,
-      "on-click": "$TERMINAL -e impala"
+      "on-click": "omarchy-launch-wifi"
     },
     "cpu": {
       "interval": 5,
@@ -91,7 +96,7 @@
     "custom/home": {
       "exec": "echo $USER",
       "format": "{text}@home",
-      "on-click": "$TERMINAL"
+      "on-click": "nautilus"
     },
     "custom/terminalicon": {
       "format": " ",
@@ -99,10 +104,10 @@
       "tooltip": false
     },
     "custom/calendar": {
-      "exec": "lua ../waybar-scripts/getday.lua",
+      "exec": "lua ~/.waybarscripts/getday.lua",
       "interval": 1,
-      "format": "󰸗 {text}",
-      "on-click": "../waybar-scripts/opencalendar.sh",
+      "format": "{text}",
+      "on-click": "~/.waybarscripts/opencalendar.sh",
       "tooltip": "true",
       "tooltip-format": "Google Calendar"
     },
@@ -111,6 +116,12 @@
       "tooltip": false
     },
     "custom/logo": {
-      "format": "    "
+      "format": "",
+      "on-click": "",
+      "tooltip-format": "More"
+    },
+    "custom/spacer": {
+      "format": "   ",
+      "tooltip": false
     }
   }
